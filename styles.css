@@ -1,0 +1,154 @@
+:root {
+    --main-bg-color: #860b15;
+    --text-color: #fafafa;
+    --accent-color: #860b15;
+    --button-bg-color: #f06666;
+    --button-text-color: #fff;
+    --font-family: 'Roboto', sans-serif;
+    --font-size: 16px;
+    --spacing: 1.5rem;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--accent-color);
+    padding: var(--spacing);
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1.logo {
+    margin: 0;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 var(--spacing);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav a:focus, nav a:hover {
+    text-decoration: underline;
+}
+
+#theme-toggle {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: var(--spacing);
+}
+
+.hero-banner {
+    background: url('https://img.goodfon.com/wallpaper/big/2/55/marvel-marvel-krasnyy-fon-red.webp') no-repeat center center / cover;
+    color: #ffffff00;
+    padding: var(--spacing);
+    text-align: center;
+}
+
+.hero-banner h2 {
+    font-size: 10rem;
+}
+
+.cta-btn {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #f75a5a;
+}
+
+.featured-heroes {
+    padding: var(--spacing);
+}
+
+.hero-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hero {
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    width: 20%;
+    transition: transform 0.3s;
+}
+
+.hero img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.buy-btn {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #ff0202;
+}
+
+.hero:hover {
+    transform: scale(1.05);
+}
+
+.news {
+    padding: var(--spacing);
+    text-align: center;
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: var(--spacing);
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.dark-theme {
+    --main-bg-color: #000000;
+    ;
+    --text-color: #ffffff;
+    --accent-color: #000000;
+    --button-bg-color: #050404;
+    --button-text-color: #ffffff;
+    --backgorund-color:#ffffff;
+}
